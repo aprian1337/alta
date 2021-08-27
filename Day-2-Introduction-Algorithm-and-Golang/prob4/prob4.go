@@ -1,33 +1,26 @@
 package main
 
-
 import (
-
-"fmt"
-
+	"fmt"
 )
-
-
 
 func primeNumber(number int) bool {
 	// your code here
 	if number > 1 {
 		if number == 2 {
 			return false
-		}else{
-			for i:=2; i<number; i++{
+		} else {
+			for i := 2; i < number; i++ {
 				if number%i == 0 {
 					return false
 				}
 			}
 			return true
 		}
-	}else {
+	} else {
 		return false
 	}
 }
-
-
 
 func main() {
 
