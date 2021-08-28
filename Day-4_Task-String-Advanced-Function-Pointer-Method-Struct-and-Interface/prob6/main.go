@@ -37,7 +37,8 @@ func (s *student) Encode() string {
 func (s *student) Decode() string {
 
 	var nameDecode = ""
-
+	//ABCDEFG..Z
+	//ZXY...A
 	// your code here
 	for _, v := range s.nameEncode {
 		if v >= 65 && v <= 90 {

@@ -1,6 +1,6 @@
 package main
 
-import(
+import (
 	"fmt"
 )
 
@@ -17,5 +17,5 @@ func main() {
 	fmt.Scanf("%f\n", &r)
 	Lp := 2*phi*(r*r) + 2*phi*r*T
 	fmt.Println("Output : ", Lp)
-	
+
 }
