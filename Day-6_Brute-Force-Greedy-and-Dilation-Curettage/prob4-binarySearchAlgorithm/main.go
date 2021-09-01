@@ -6,26 +6,19 @@ func BinarySearch(array []int, x int) {
 
 	// your code here
 	sortArr := MergeSort(array)
-	startIndex := 0
-	endIndex := len(sortArr) - 1
-	midIndex := len(sortArr) / 2
-	for startIndex <= endIndex {
-
-		value := sortArr[midIndex]
-
-		if value == x {
-			fmt.Println(midIndex)
+	low := 0
+	high := len(sortArr) - 1
+	for low <= high {
+		mid := (low + high) / 2
+		if sortArr[mid] == x {
+			fmt.Println(mid)
 			return
 		}
-
-		if value > x {
-			endIndex = midIndex - 1
-			midIndex = (startIndex + endIndex) / 2
-			continue
+		if sortArr[mid] < x {
+			low = mid + 1
+		} else {
+			high = mid - 1
 		}
-
-		startIndex = midIndex + 1
-		midIndex = (startIndex + endIndex) / 2
 	}
 	fmt.Println(-1)
 }
