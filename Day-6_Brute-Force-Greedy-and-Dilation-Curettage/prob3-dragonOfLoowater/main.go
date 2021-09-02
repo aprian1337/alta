@@ -55,7 +55,7 @@ func MergeSort(s []int) []int {
 
 func main() {
 
-	DragonOfLoowater([]int{5, 4}, []int{7, 8, 4}) // 11
+	DragonOfLoowater([]int{5, 4}, []int{7, 8, 4, 3}) // 11
 
 	DragonOfLoowater([]int{5, 10}, []int{5}) // knight fall
 
