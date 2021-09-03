@@ -9,7 +9,8 @@ func Frog(jumps []int) int {
 
 	// your code here
 	var res []int
-	res = append(res, 0)
+	//res = append(res, 0)
+	res[0] = 0
 	for i := 1; i < len(jumps); i++ {
 		if i >= 2 {
 			tmp1 := res[i-1] + int(math.Abs(float64(jumps[i]-jumps[i-1])))
